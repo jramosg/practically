@@ -1,4 +1,4 @@
-(ns practicalli.day1)
+(ns practicalli-clojure.day1)
 
 ;--- Day 1: Report Repair ---
 ;After saving Christmas five years in a row, you've decided to take a vacation at a nice resort on a tropical island. Surely, Christmas will go on without you.
@@ -235,6 +235,8 @@
                    (some #(= (+ e %) 2020)))))
        (reduce *)))
 
+#_(practicalli-clojure.day1/main)
+
 ;--- Part Two ---
 ;The Elves in accounting are thankful for your help; one of them even offers you a starfish coin they had left over from a past vacation. They offer you a second one if you can find three numbers in your expense report that meet the same criteria.
 ;
@@ -260,3 +262,5 @@
                      (some (fn [e2]
                              (= (+ e e2) 2020))))))
          (reduce *))))
+
+#_(practicalli-clojure.day1/main2)
